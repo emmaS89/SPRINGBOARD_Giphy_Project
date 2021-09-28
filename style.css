@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 2rem;
+    height: 100vh;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.display-input {
+    padding: 0.5rem;
+    border: none;
+    margin: 2rem;
+
+}
+
+input[type = 'search']:hover,
+input[type = 'button']:hover {
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 10px 4px 15px 10px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 10px 4px 15px 10px rgba(0,0,0,0);
+}
+
+input[type = 'submit'],
+input[type = 'button'] {
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+input[type = 'submit']:hover {
+    transform: translateY(-0.5px);
+    -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 10px 4px 15px 10px rgba(0,0,0,0); 
+    box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 10px 4px 15px 10px rgba(0,0,0,0);
+}
+
+#img-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.giphy {
+    max-width: 350px;
+    width: 100%;
+
+}
+
+#img-container img {
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+}
